@@ -22,7 +22,7 @@ g++ largest_rectangle.cpp -o rectangle
 # Detecta ciclos en listas enlazadas usando Algoritmo de Floyd
 
 # Compilar
-g++ -std=c++17 cycle_detection.cpp -o cycle
+g++ cycle_detection.cpp -o cycle
 
 # Ejecutar (muestra ambos casos de prueba)
 ./cycle
@@ -42,14 +42,6 @@ g++ -std=c++17 cycle_detection.cpp -o cycle
 # RESULTADO: >> Se detecto un ciclo <<
 # ========================================================
 
-
-#  Pruebas adicionales
-# ---------------------
-
-# largest_rectangle - Caso con múltiples picos
-echo -e "6\n2 1 5 6 2 3" | ./rectangle
-# Output esperado: 10
-
 # cycle_detection - Ya ejecuta ambas pruebas automáticamente
 
 
@@ -59,15 +51,6 @@ echo -e "6\n2 1 5 6 2 3" | ./rectangle
 # ├── largest_rectangle.cpp
 # ├── cycle_detection.cpp
 # └── README.md
-
-
-#  Notas técnicas
-# ----------------
-# - largest_rectangle: Stack de índices para mantener alturas crecientes
-# - cycle_detection: Punteros slow y fast (1 y 2 pasos)
-# - Complejidad: Ambos algoritmos son O(N)
-# - Espacio: O(N) en el peor caso
-
 
 #  Referencias
 # -------------
